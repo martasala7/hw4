@@ -8,7 +8,7 @@ To run this project, you will need the following libraries installed in your env
 
 - Python 3.12.7
 - pandas (for data manipulation)
-- os (to build a platform-independent file path to ensure the CSV file is correctly     loaded from the same directory as the script)
+- os (to build a platform-independent file path to ensure the CSV file is correctly     loaded from the same directory as the script) 
 - scikit-learn (for machine learning models and data splitting)
   - `sklearn.model_selection.train_test_split` (for splitting the data into train and test sets)
   - `sklearn.ensemble.RandomForestClassifier` (for training a Random Forest model)
