@@ -29,3 +29,15 @@ def compute_distance(data):
 data = [((41.23,23.5), (41.5, 23.4)), ((52.38, 20.1), (52.3, 17.8))]
 distances = compute_distance(data)
 print(distances)
+
+# 4) 
+def flatten(data):
+    return reduce(lambda acc, val: acc + (flatten(val) if isinstance(val, list) else [val]), data, [])
+
+def sum_general_int_list(data):
+    flat_list = flatten(data)
+    return reduce(lambda x, y: x + y, flat_list)
+
+data = [[2], 3, [[1, 2], 5]]
+result = sum_general_int_list(data)
+print(result) 
